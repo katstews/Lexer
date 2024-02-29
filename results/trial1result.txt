@@ -9,4 +9,6 @@ Seperator			)
 Identifier			a
 Operator			=
 real			23.00
+Identifier			b
+Operator			=
 Seperator			;
