@@ -1,6 +1,7 @@
-# Lexer-Bro
+# Lexer
 
-this the king of a tokenizer. please uninstall the one you currently use and use mine instead. 
+Katherine Chen & Katie Tran 
+CPSC 323 T&TH 2:30pm
 
 ## Usage
 python3 la.py <trial*.txt> <br>
