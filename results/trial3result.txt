@@ -1,5 +1,5 @@
 token				lexeme
-===========================
+======================================
 Seperator			$
 Keyword			function
 Seperator			(

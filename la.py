@@ -244,7 +244,7 @@ def main():
     # final touches, write the results into a file called output.txt     
     with open(filename[:-4] + 'result.txt', 'w') as file:
         file.write("token\t\t\t\tlexeme\n")
-        file.write("===========================\n")
+        file.write("======================================\n")
         for x,y in pairs:
             file.write(y + "\t\t\t" + x + '\n')
 

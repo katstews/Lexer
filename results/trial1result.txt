@@ -1,5 +1,5 @@
 token				lexeme
-===========================
+======================================
 Keyword			while
 Seperator			(
 Identifier			fahr
