@@ -1,6 +1,6 @@
 # Lexer
 
-Katherine Chen & Katie Tran 
+Katherine Chen & Katie Tran <br>
 CPSC 323 T&TH 2:30pm
 
 ## Usage
