@@ -3,7 +3,7 @@ import argparse
 
 pairs = []
 
-seperators = ['$', ',', '{', '}', ';', '(', ')', '[', ']']
+seperators = ['$', ',', '{', '}', ';', '(', ')']
 keywords = ['if', 'real', 'else', 'true', 'endwhile', 'integer', 'boolean', 'while', 'endif', 'print', 'return', 'scan', 'false', 'function']
 operators = ['==', '!=', '>', '<', '<=', '=>', '+', '-', '*', '/', '=', '!']
 
@@ -172,20 +172,20 @@ def main():
         
         elif x.isdigit():
             i = realDigitFism(i, x)
-            
-        elif x in seperators:
-            ##this if block ignores comments
-            if x == '[' and content[i+1] == '*':
+        
+        ##this if block ignores comments
+        elif x == '[' and content[i+1] == '*':
                 comment = True
                 while(comment):
                     i += 1
                     if content[i] == '*' and content[i+1] == ']':
                         comment = False
-                        i += 1
-            else:
-                token = "Seperator"
-                lexeme = x
-                pairs.append((lexeme,token))
+                        i += 1   
+                         
+        elif x in seperators:
+            token = "Seperator"
+            lexeme = x
+            pairs.append((lexeme,token))
     
         elif x in operators:
             if x == '=':
