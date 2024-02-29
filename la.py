@@ -241,7 +241,7 @@ def main():
         
         i += 1
     
-    # final touches, write the results into a file called output.txt     
+    # final touches, write the results into a file called filename + 'result.txt'     
     with open(filename[:-4] + 'result.txt', 'w') as file:
         file.write("token\t\t\t\tlexeme\n")
         file.write("======================================\n")
